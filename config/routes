@@ -7,7 +7,9 @@
 
 /comments CommentR POST
 
-/foo FooR:
-    /bar FooBarR GET
+/foo/before FooBeforeR GET
 
-/foo/baz FooBazR GET
+/foo FooR:
+    /nested FooNestedR GET
+
+/foo/after FooAfterR GET

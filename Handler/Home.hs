@@ -45,6 +45,7 @@ sampleForm = renderBootstrap3 BootstrapBasicForm $ (,)
 commentIds :: (Text, Text, Text)
 commentIds = ("js-commentForm", "js-createCommentTextarea", "js-commentList")
 
-getFooBarR, getFooBazR :: Handler Html
-getFooBarR = defaultLayout $ "Yes, this is foo"
-getFooBazR = defaultLayout $ "No, this is foo"
+getFooBeforeR, getFooAfterR, getFooNestedR :: Handler Html
+getFooBeforeR = defaultLayout $ "Before heirarchical route"
+getFooNestedR = defaultLayout $ "A nested heirarchical route"
+getFooAfterR  = defaultLayout $ "After the heirarchical route"
