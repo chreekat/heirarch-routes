@@ -8,6 +8,6 @@
 /comments CommentR POST
 
 /foo FooR:
-    / FooBarR GET
+    /bar FooBarR GET
 
 /foo/baz FooBazR GET
